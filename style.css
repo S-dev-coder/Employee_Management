@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #010101;
+    color: var(--clr-dark);
+    font-family: var(--ff-body);
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    color: white;
+    background-color: #1e3146;
+}
+
+/* Employee form styles */
+.employee-form {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee-form label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.employee-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.employee-form button {
+    background-color: #1e3146;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-form button:hover {
+    background-color: rgb(43, 62, 86);
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    height: max-content;
+}
+
+/* Form container styles */
+.form-container {
+    flex: 1;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container styles */
+.table-container {
+    overflow-x: auto;
+    flex: 3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee table styles */
+#employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ccc;
+}
+
+#employee-table th,
+#employee-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#employee-table th {
+    background-color: rgb(34, 34, 42);
+}
+
+#employee-table td:last-child,
+#employee-table th:last-child {
+    text-align: center;
+}
+
+#employee-table tbody tr:hover {
+    background-color: black;
+}
+
+/* Edit button styles */
+#employee-table button {
+    background-color: #364554;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#employee-table button:hover {
+    background-color: rgb(43, 62, 86);
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .employee-form input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}

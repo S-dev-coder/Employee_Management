@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+
+
+    <!-- Include external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <!-- Header section -->
+      <div class="header">
+        <h1>Employee Management Portal</h1>
+      </div>
+      <div class="container">
+        <div class="form-container">
+          <form id="employee-form" class="employee-form">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="text" id="address" placeholder="Address" required />
+            <input
+              type="text"
+              id="employee-id"
+              placeholder="Employee ID"
+              required
+            />
+            <input
+              type="text"
+              id="designation"
+              placeholder="Designation"
+              required
+            />
+            <button type="submit" id="add-btn">Add Employee</button>
+            <button type="button" id="edit-btn">Save changes</button>
+          </form>
+        </div>
+
+        <!-- Employee Table section -->
+        <div class="table-container">
+          <table id="employee-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Employee ID</th>
+                <th>Designation</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <!-- Placeholder for employee data -->
+            <tbody id="employee-list"></tbody>
+          </table>
+        </div>
+      </div>
+
+    <!-- Include external JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
