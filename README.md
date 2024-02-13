@@ -16,4 +16,4 @@ The Employee Management Portal is a web-based application designed to streamline
 - **GitHub**: Hosting platform used for storing the project repository and managing project documentation.
 
 ## Live Demo
-[Visit Website]()
+[Visit Website](https://majestic-kleicha-b2678a.netlify.app/)
